@@ -1,0 +1,257 @@
+@import "mixins"
+@import "variables"
+@import "carousel"
+
+html
+	font-family: 'Roboto', sans-serif
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	text-decoration: none
+	color: inherit
+	list-style-type: none
+	input::placeholder
+		font-weight: bold
+		opacity: 0.5
+		color: red
+
+.container
+	max-width: 1290px
+	margin: 0 auto
+
+header
+	display: block
+	height: 140px
+	background: linear-gradient(#C0F3F7, #CBF5F8)
+	position: sticky
+	left: 0
+	top: 0
+	right: 0
+	z-index: 5
+	.header_wrapper
+		height: 140px
+		display: flex
+		gap: 119px
+		align-items: center
+		ul
+			display: flex
+			font-size: 16px
+			font-weight: 900
+			gap: 40px
+			color: $main-color
+		.header_contacts
+			display: flex
+			flex-grow: 1
+			flex-direction: column
+			align-items: flex-end
+			justify-content: center
+			gap: 17px
+			.descr
+				color: $main-color
+				font-weight: 400
+				font-size: 16px
+.promo
+	padding: 90px 0 50px 0
+	background: linear-gradient(#CCF6F9, #FFFFFF)
+	.promo_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.promo_text
+			display: block
+			margin: auto 0
+			.promo_subtitle
+				font-size: 20px
+				font-weight: 400
+				color: $text-color
+				margin-top: 30px
+				line-height: 140%
+				
+			.promo_descr
+				font-size: 16px
+				font-weight: 400
+				color: $text-color
+				margin: 50px 0 20px 0
+.services
+	padding-top: 150px		
+	&_card
+		margin-top: 50px
+		display: flex
+		flex-wrap: wrap
+		row-gap: 20px
+		justify-content: space-between
+
+.about
+	padding-top: 150px
+	.carousel_about
+		border-radius: 20px
+		overflow: hidden
+
+.doctors
+	padding-top: 150px
+	&_cards
+		margin-top: 50px
+		display: flex
+		justify-content: space-between
+
+.advantages
+	padding-top: 150px
+	&_wrapper
+		padding-top: 50px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		max-width: 1075px
+		ul.advantages_text
+			max-width: 525px
+			li
+				list-style-type: decimal
+				margin-top: 10px				
+				font-weight: 400
+				font-size: 16px
+				line-height: 140%
+				color: $text-color
+		.carousel_advantages
+			width: 526px
+			border-radius: 20px
+			overflow: hidden
+
+.results
+	padding-top: 150px
+	.carousel_results
+		border-radius: 20px
+		overflow: hidden
+
+.consultation
+	padding-top: 150px
+	&_wrapper
+		max-width: 1076px
+		margin: 50px auto 0 auto
+		display: flex
+		justify-content: space-between
+		gap: 24px
+	form
+		display: flex
+		flex-direction: column
+		gap: 20px		
+		input:focus
+			color: $main-color
+			outline: 1px solid $main-color			
+		input::-webkit-outer-spin-button
+		input::-webkit-inner-spin-button
+			display: none	
+
+.contacts
+	padding-top: 150px
+	&_wrapper
+		margin: 0 auto
+		padding-top: 50px
+		display: flex
+		justify-content: space-between
+		gap: 24px
+		max-width: 1076px
+		.contact_context
+			display: flex
+			flex-direction: column
+			gap: 20px
+			color: $text-color
+			font-size: 16px
+			font-weight: 400
+			.contact_buttons
+				display: flex
+				flex-direction: column
+				gap: 10px
+		.contacts_map
+			display: block
+			border-radius: 20px
+			overflow: hidden
+
+footer
+	margin-top: 150px
+	height: 212px
+	background: #BFF2F6
+	.footer_wrapper
+		padding-top: 30px
+		display: flex
+		align-items: flex-start
+		gap: 120px
+		.footer_list
+			display: flex
+			flex-grow: 1
+			justify-content: space-between
+			width: 400px
+			color: $main-color
+			font-size: 16px
+			font-weight: 400
+			li
+				margin-top: 10px
+
+
+	.contact_buttons
+		display: flex
+		flex-grow: 1
+		flex-direction: column
+		gap: 10px
+		align-items: flex-end
+		justify-content: center
+
+.generaldentistry, .implants, .restavration, .whitening, .periodontal, .estetic, .Crownsandbridges, .veneers
+	padding-top: 150px
+	.services_wrapper
+		max-width: 1076px
+		margin: 50px auto 0 auto
+		display: flex
+		gap: 40px
+		img
+			height: 306px
+		.content
+			display: flex
+			flex-grow: 1
+			flex-direction: column
+			gap: 30px
+			color: $text-color
+			font-size: 20px
+			font-weight: 400
+			line-height: 140%
+			.descrbutton
+				display: flex
+				flex-direction: column
+				gap: 20px
+				font-size: 16px
+				color: $main-color
+				font-weight: 400
+
+.chiefdoctor
+	margin-top: 150px
+	.subtitle_doctors
+		margin: 20px auto 0 auto
+		text-align: center
+		color: $text-color
+		font-size: 20px
+		font-weight: 400
+	.wrapper_doctors
+		max-width: 1076px
+		margin: 40px auto 0 auto
+		display: flex
+		gap: 40px
+		img
+			height: 405px
+		.name_doctors
+			font-size: 20px
+			font-weight: 900
+			color: $main-color
+		.text_doctors
+			margin-top: 20px
+			color: $text-color
+			font-size: 16px
+			font-weight: 400
+			line-height: 140%
+		.descrbutton
+			margin-top: 30px
+			.descrbutton_descr
+				margin-bottom: 20px
+				font-size: 16px
+				color: $main-color
+				font-weight: 400

@@ -1,0 +1,156 @@
+@import "variables"
+
+a.button
+	display: flex
+	width: 205px
+	justify-content: center
+	align-items: center
+	gap: 10px
+	padding: 13px 20px
+	border: 1px solid $main-color
+	border-radius: 90px
+	color: $main-color
+	font-size: 16px
+	font-weight: 900
+	text-transform: uppercase
+	background: none
+	cursor: pointer
+
+a.mainbutton, button.mainbutton
+	display: flex
+	width: 205px
+	justify-content: center
+	align-items: center
+	padding: 13px 20px
+	color: #fff
+	font-size: 16px
+	font-weight: 900
+	letter-spacing: 1%
+	background-color: $button-color
+	border-radius: 90px
+	border: none
+	cursor: pointer
+
+button.textbutton, a.textbutton
+	display: flex
+	justify-content: center
+	padding-bottom: 3px
+	color: $textbutton-color
+	font-size: 16px
+	font-weight: 400
+	border: none
+	border-bottom: 1px solid $textbutton-color
+	background: none
+	cursor: pointer
+
+h1
+	font-size: 60px
+	font-weight: 900
+	margin: 0
+	text-transform: uppercase
+	color: $main-color
+
+h2
+	text-align: center
+	text-transform: uppercase
+	color: $main-color
+	font-size: 45px
+	font-weight: 900
+	margin: 0
+
+h3
+	margin-top: 30px
+	text-align: center
+	color: $text-color
+	font-size: 16px
+	font-weight: 400
+	line-height: 140%
+
+.services_card
+	&_1, &_2, &_3, &_4, &_5, &_6, &_7, &_8
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 20px
+		gap: 20px
+		width: 306px
+		height: 362px
+		border: 1px solid $main-color
+		border-radius: 20px
+		.services_text
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 0px
+			gap: 15px
+			width: 266px
+			height: 181px
+			.services_card_title
+				font-weight: 400
+				font-size: 20px
+				line-height: 140%
+				text-align: center
+				color: $main-color
+			.services_card_descr
+				font-weight: 400
+				font-size: 16px
+				line-height: 140%
+				text-align: center
+				color: $text-color
+
+.doctors_cards
+	&_1, &_2, &_3, &_4
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 20px
+		gap: 20px
+		border: 1px solid $main-color
+		border-radius: 20px
+		.doctors_text
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 0
+			gap: 15px
+			width: 100%
+			&_title
+				font-weight: 400
+				font-size: 20px
+				text-align: center
+				color: $main-color
+			&_subtitle
+				font-weight: 400
+				font-size: 16px
+				text-align: center
+				color: $text-color
+
+.consultation
+	form
+		label
+			display: flex
+			flex-direction: column
+			gap: 8px
+			color: $main-color
+			font-size: 16px
+			font-weight: 400
+			text-indent: 20px
+			input
+				width: 280px
+				height: 44px
+				border: 1px solid $main-color
+				border-radius: 90px
+				background: none
+				padding: 0 20px
+				color:$main-color
+		.checkbox
+			margin-bottom: 10px
+			display: flex
+			gap: 10px
+			align-items: center
+			color: $main-color
+			font-size: 10px
+			font-weight: 400
+			input
+				width: 16px
+				height: 16px
