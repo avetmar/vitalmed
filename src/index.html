@@ -315,17 +315,17 @@
             <h2 class="consultation_title">запишитесь на консультацию</h2>
             <h3 class="consultation_subtitle">Консультация представляет собой личный прием в нашей клинике, проведет ее главный врач Виталий Оганян</h3>
             <div class="consultation_wrapper">
-                <form class="feed_form" action="#" method="POST">
+                <form class="feed_form" action="#">
                     <label>
-                        Имя<br><input name="name" required placeholder="Виталий" type="text">
+                        Имя<br><input name="name" placeholder="Виталий" type="text">
                     </label>
                     <label>
-                        Номер телефона<br><input name="phone" required placeholder="+374 (98) 90 90 03" type="number">
+                        Номер телефона<br><input name="phone" placeholder="+374 (98) 90-90-03">
                     </label>
                     <div class="checkbox">
-                        <input required type="checkbox">Согласен на обработку персональных данных
+                        <input name="check" type="checkbox">Согласен на обработку персональных данных
                     </div>
-                    <button class="mainbutton">ЗАПИСАТЬСЯ</button>
+                    <button data-modal="thanks" class="mainbutton">ЗАПИСАТЬСЯ</button>
                 </form>
                 <img src="img/consultation.jpg" alt="IMG">
             </div>
@@ -380,9 +380,25 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <div class="overlay">
+        <div class="modal" id="thanks">
+            <button class="modal_close"><img src="icon/close.svg" alt="close"></button>
+            <img class="modal_doctor" src="img/thanks.png" alt="doctorimg">
+            <h4 class="modal_title">спасибо, что выбрали нас</h4>
+            <div class="modal_subtitle">Скоро вы получите СМС уведомление о <br> подтверждении времени посещения в клинику.</div>
+            <div class="modal_descr">С уважением «VITAL MED» — центр имплантологии и эстетической стоматологии в Ереване. </div>
+        </div>
+    </div>
+
+    <a href="#promo" class="pageup">
+        <img src="icon/circle-chevron-up-solid.svg" alt="pageup">
+    </a>    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
