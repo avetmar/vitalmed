@@ -2,6 +2,7 @@
 @import "variables"
 @import "carousel"
 
+
 html
 	font-family: 'Roboto', sans-serif
 
@@ -19,6 +20,12 @@ html
 .container
 	max-width: 1290px
 	margin: 0 auto
+	@media (max-width: 1439px)
+		max-width: 1040px
+		margin: 0 auto
+	@media (max-width: 1199px)
+		max-width: 900px
+		margin: 0 auto
 
 header
 	display: block
@@ -51,6 +58,9 @@ header
 				color: $main-color
 				font-weight: 400
 				font-size: 16px
+		@media (max-width: 1199px)
+			gap: 50px
+
 .promo
 	padding: 90px 0 50px 0
 	background: linear-gradient(#CCF6F9, #FFFFFF)
@@ -79,14 +89,23 @@ header
 		margin-top: 50px
 		display: flex
 		flex-wrap: wrap
-		row-gap: 20px
-		justify-content: space-between
+		gap: 20px
+		justify-content: center
 
 .about
 	padding-top: 150px
 	.carousel_about
 		border-radius: 20px
 		overflow: hidden
+		@media (max-width: 1439px)
+			border-radius: 15px
+			.carousel_inner
+				img
+					max-width: 95%
+	@media (max-width: 1199px)
+		h2
+			margin: 0 auto
+			max-width: 600px
 
 .doctors
 	padding-top: 150px
@@ -94,6 +113,10 @@ header
 		margin-top: 50px
 		display: flex
 		justify-content: space-between
+		@media (max-width: 1439px)
+			img
+				width: 200px
+				height: 100%
 
 .advantages
 	padding-top: 150px
@@ -122,6 +145,10 @@ header
 	.carousel_results
 		border-radius: 20px
 		overflow: hidden
+		@media (max-width: 1439px)
+			border-radius: 15px
+			img
+				max-width: 95%
 
 .consultation
 	padding-top: 150px
@@ -190,6 +217,8 @@ footer
 			font-weight: 400
 			li
 				margin-top: 10px
+		@media (max-width: 1199px)
+			gap: 50px
 
 
 	.contact_buttons
@@ -227,7 +256,7 @@ footer
 				font-weight: 400
 
 .chiefdoctor
-	margin-top: 150px
+	padding-top: 150px
 	.subtitle_doctors
 		margin: 20px auto 0 auto
 		text-align: center
@@ -319,3 +348,6 @@ footer
 	height: 40px
 	img
 		width: 100%
+	@media (max-width: 1439px)
+		bottom: 15px
+		right: 15px
