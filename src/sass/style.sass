@@ -26,6 +26,9 @@ html
 	@media (max-width: 1199px)
 		max-width: 900px
 		margin: 0 auto
+	@media (max-width: 991px)
+		max-width: 696px
+		margin: 0 auto
 
 header
 	display: block
@@ -41,6 +44,13 @@ header
 		display: flex
 		gap: 119px
 		align-items: center
+		.menu
+			height: 140px
+			display: flex
+			gap: 119px
+			text-align: center
+			align-items: center
+			flex-grow: 1
 		ul
 			display: flex
 			font-size: 16px
@@ -60,6 +70,53 @@ header
 				font-size: 16px
 		@media (max-width: 1199px)
 			gap: 50px
+			.menu
+				gap: 50px
+		@media (max-width: 991px)
+			justify-content: space-between
+			ul
+				flex-direction: column
+			.menu
+				position: fixed
+				flex-direction: column
+				top: 0
+				left: -100%
+				width: 376px
+				height: 100vh
+				padding: 40px 38px
+				background-color: #fff
+				transition: 0.6s all
+				&_active
+					left: 0
+				.header_contacts
+					align-items: center
+					justify-content: flex-start
+		
+
+
+.burger
+	display: none
+	@media (max-width: 991px)
+		display: block
+		width: 44px
+		height: 44px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: $main-color
+			margin-bottom: 16px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+					
 
 .promo
 	padding: 90px 0 50px 0
@@ -68,6 +125,9 @@ header
 		display: flex
 		justify-content: space-between
 		align-items: center
+		@media (max-width: 991px)
+			flex-direction: column
+			gap: 30px
 		.promo_text
 			display: block
 			margin: auto 0
@@ -119,8 +179,13 @@ header
 				height: 100%
 		@media (max-width: 1199px)
 			img
-				width: 150px
+				width: 165px
 				height: 100%
+		@media (max-width: 991px)
+			flex-wrap: wrap
+			max-width: 450px
+			gap: 30px
+			margin: 50px auto
 	@media (max-width: 1199px)
 		h2
 			margin: 0 auto
@@ -134,8 +199,15 @@ header
 		display: flex
 		justify-content: space-between
 		max-width: 1075px
+		@media (max-width: 991px)
+			flex-direction: column
 		ul.advantages_text
 			max-width: 525px
+			@media (max-width: 991px)
+				display: flex
+				gap: 40px
+				.avantages_text_1, .avantages_text_2
+					min-width: 336px
 			li
 				list-style-type: decimal
 				margin-top: 10px				
@@ -147,6 +219,11 @@ header
 			width: 526px
 			border-radius: 20px
 			overflow: hidden
+			@media (max-width: 991px)
+				width: 100%
+				height: 386px
+				img
+					width: 100%
 	@media (max-width: 1199px)
 		&_wrapper
 			max-width: 900px
