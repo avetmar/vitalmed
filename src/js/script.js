@@ -95,7 +95,7 @@ $(document).ready(function(){
   try {
     $("a[href^='#']").click(function(){
       const _href = $(this).attr("href");
-      $("html, body").animate({scrollTop: $(_href).offset().top+-135+"px"});
+      $("html, body").animate({scrollTop: $(_href).offset().top+-135+"px"}, 1600);
       return false;
     });
   } catch (e) {}

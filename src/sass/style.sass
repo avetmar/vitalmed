@@ -117,6 +117,14 @@ header
 			img
 				width: 200px
 				height: 100%
+		@media (max-width: 1199px)
+			img
+				width: 150px
+				height: 100%
+	@media (max-width: 1199px)
+		h2
+			margin: 0 auto
+			max-width: 600px
 
 .advantages
 	padding-top: 150px
@@ -139,6 +147,14 @@ header
 			width: 526px
 			border-radius: 20px
 			overflow: hidden
+	@media (max-width: 1199px)
+		&_wrapper
+			max-width: 900px
+			gap: 20px
+			ul.advantages_text
+				max-width: 440px
+			.carousel_advantages
+				min-width: 440px
 
 .results
 	padding-top: 150px
@@ -171,6 +187,9 @@ header
 		label.error
 			color: red
 			font-size: 12px
+	@media (max-width: 1199px)
+		img
+			max-width: 550px
 
 
 .contacts
