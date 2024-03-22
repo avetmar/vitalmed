@@ -9,7 +9,27 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 425,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+        ]
     });
 
     $('.carousel_advantages').slick({
@@ -34,7 +54,27 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 425,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+        ]
     });
 
     $('#consult form').validate({
