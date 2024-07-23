@@ -1,0 +1,30 @@
+.advantages
+	margin-bottom: 120px
+	padding-top: 30px
+	&_wrapper
+		padding-top: 30px
+		margin: 0 auto
+		display: flex
+		gap: 20px
+		max-width: 1075px
+		.carousel_advantages
+			position: relative
+			width: 525px
+			height: 495px
+			border-radius: 20px
+			overflow: hidden
+			div
+				position: absolute
+				opacity: 0
+				transition: opacity 1s ease-in-out
+			div.active
+				opacity: 1
+	&_text
+		max-width: 525px
+		display: flex
+		flex-direction: column
+		gap: 10px
+		li
+			opacity: .3
+			transition: opacity 1s
+		

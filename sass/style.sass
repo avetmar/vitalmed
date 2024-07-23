@@ -1,0 +1,104 @@
+
+@import "variables"
+@import "mixins"
+@import "generals"
+@import 'index/promo'
+@import 'index/services'
+@import 'index/about'
+@import 'index/doctors'
+@import 'index/advantages'
+@import 'index/resaults'
+@import 'index/contacts'
+@import 'doctors/doctorsPage'
+@import "media"
+
+.overlay
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	background-color: rgba(0,0,0,0.56)
+	z-index: 7
+.modal
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: #fff
+	border-radius: 20px
+	overflow: hidden
+	width: 790px
+	height: 585px
+	padding: 40px
+	&_title
+		margin-top: 30px
+		font-size: 32px
+		font-weight: 900
+		color: $main-color
+		text-transform: uppercase
+		text-align: center
+	&_subtitle
+		margin-top: 30px
+		font-size: 20px
+		font-weight: 400
+		color: $text-color
+		text-align: center
+	&_descr
+		margin-top: 30px
+		font-size: 16px
+		font-weight: 400
+		color: $text-color
+		text-align: center
+	&_doctor
+		display: block
+		margin: 0 auto
+	&_close
+		position: absolute
+		right: 20px
+		top: 20px
+		cursor: pointer
+		width: 32px
+		height: 32px
+		background: none
+		border: none
+	@media (max-width: 991px)
+		width: 375px
+		height: 608px
+		padding: 40px 12px
+		.modal_doctor
+			width: 267px
+			height: 267px
+		.modal_title
+			font-size: 32px
+		.modal_subtitle
+			font-size: 18px
+		.modal_descr
+			font-size: 12px
+	@media (max-width: 450px)
+		width: 330px
+		height: 608px
+		padding: 40px 12px
+		.modal_doctor
+			width: 267px
+			height: 267px
+		.modal_title
+			font-size: 32px
+		.modal_subtitle
+			font-size: 18px
+		.modal_descr
+			font-size: 12px
+		
+
+.pageup
+	display: none
+	position: fixed
+	bottom: 40px
+	right: 40px
+	width: 40px
+	height: 40px
+	img
+		width: 100%
+	@media (max-width: 1439px)
+		bottom: 15px
+		right: 15px

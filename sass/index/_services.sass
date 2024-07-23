@@ -1,0 +1,33 @@
+.services
+	margin-bottom: 120px
+	padding-top: 30px
+	&_subtitle
+		margin-bottom: 60px
+		text-align: center
+		
+	&_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 10px
+	&_image
+		transition: all .5s ease
+	&_card
+		display: inline-flex
+		flex-direction: column
+		align-items: center
+		padding: 20px
+		gap: 20px
+		height: 360px
+		border: 1px solid $main-color
+		border-radius: 20px
+		&:hover
+			.services_image
+				transform: rotate(360deg)
+		&_title
+			text-align: center
+			color: $main-color
+		&_descr
+			text-align: center
+			max-width: 300px
+			height: 100%

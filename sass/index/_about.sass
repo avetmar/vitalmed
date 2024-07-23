@@ -1,0 +1,44 @@
+.about
+	margin-bottom: 120px
+	padding-top: 30px
+	&_subtitle
+		margin-bottom: 60px
+		text-align: center
+	&_slider
+		position: relative
+		max-width: 1120px
+		width: 80%
+		margin: 0 auto
+		overflow: hidden
+		border-radius: 30px
+		&:hover
+			.slider_next, .slider_prew
+				opacity: 1
+		&-line
+			display: flex
+			transition: all 1s ease
+
+		.slider_next
+			opacity: 0
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			right: 0
+			top: 0
+			height: 100%
+			width: 60px
+			background: rgba(0, 0, 0, 0.205)
+			transition: all 1s ease
+		.slider_prew
+			opacity: 0
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			left: 0
+			top: 0
+			height: 100%
+			width: 60px
+			background: rgba(0, 0, 0, 0.205)
+			transition: all 1s ease

@@ -1,0 +1,29 @@
+.doctors
+	margin-bottom: 120px
+	padding-top: 30px
+	&_subtitle
+		text-align: center
+		margin-bottom: 60px
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		gap: 15px
+
+	&_cards
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 20px
+		gap: 20px
+		border: 1px solid $main-color
+		border-radius: 20px
+		&_image-wrapper
+			border-radius: 20px
+			overflow: hidden
+			.doctors_image
+				transition: all .5s ease
+		&:hover
+			.doctors_image
+				transform: scale(1.2)
+
+	
