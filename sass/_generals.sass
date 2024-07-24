@@ -111,3 +111,33 @@ body
 		flex-direction: column
 		gap: 10px
 		justify-content: center
+
+.pageup
+	position: fixed
+	bottom: 20px
+	right: 20px
+	display: none
+	animation: fadeInOut 1s ease-in-out
+	transition: transform .5s ease
+	&:hover
+		transform: rotate(360deg)
+
+.pageup.show
+	display: block
+	opacity: 1
+
+.pageup.hide
+	opacity: 0
+
+@keyframes fadeInOut
+	0%
+		opacity: 0
+		display: none
+  
+	50%
+		opacity: 0.5
+		display: block
+  
+	100%
+		opacity: 1
+		display: block
