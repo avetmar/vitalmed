@@ -2,8 +2,21 @@
 	margin-bottom: 120px
 	padding-top: 30px
 	&_subtitle
-		margin-bottom: 60px
+		margin-bottom: 10px
 		text-align: center
+	&_subtitle-descr
+		text-align: center
+		margin-bottom: 60px
+	&_textWrapper
+		display: flex
+		gap: 20px
+		justify-content: space-between
+		margin-bottom: 60px
+	&_textContent
+		display: flex
+		max-width: 45%
+		flex-direction: column
+		gap: 10px
 	&_slider
 		position: relative
 		max-width: 1120px
@@ -11,6 +24,7 @@
 		margin: 0 auto
 		overflow: hidden
 		border-radius: 30px
+		box-shadow: 0px 0px 10px rgba($main-color , .5)
 		&:hover
 			.slider_next, .slider_prew
 				opacity: 1

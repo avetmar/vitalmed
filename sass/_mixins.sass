@@ -42,10 +42,11 @@
 	display: inline-flex
 	justify-content: center
 	padding-bottom: 3px
-	border-bottom: 1px solid $textbutton-color
+	border-bottom: 1px solid rgba($textbutton-color, 0)
 	transition: all .5s ease
 	&:hover
 		transform: translateY(-5px)
+		border-bottom: 1px solid rgba($textbutton-color, 1)
 
 h1
 	font-size: 45px
@@ -63,12 +64,11 @@ h2
 
 h3
 	text-align: center
-	font-size: 28px
-	font-weight: 400
-
-h4
 	font-size: 22px
 	font-weight: 400
 
+h4
+	font-size: 18px
+	font-weight: 500
 
 
