@@ -1,6 +1,7 @@
 .results
+	background: $fon_color
 	margin-bottom: 120px
-	padding-top: 30px
+	padding: 60px 0
 	text-align: center
 	&_title
 		margin-bottom: 60px
@@ -10,9 +11,11 @@
 		overflow: hidden
 		border-radius: 30px
 		width: 100%
-		max-width: 1120px
+		max-width: 800px
+		// max-height: 476px
 		margin: 0 auto
 		margin-bottom: 60px
+		box-shadow: 0px 0px 15px rgba($main-color , .5)
 	.before
 		position: absolute
 		left: 0
@@ -54,4 +57,14 @@
 		height: 50px
 		background-color: $button_color
 		transform: translate(-50%, -50%)
+
+	.elseResults
+		display: flex
+		gap: 20px
+		height: 180px
+		justify-content: space-between
+		margin-bottom: 30px
+		img
+			border-radius: 30px
+			box-shadow: 3px 3px 5px rgba($main-color , .3)
 

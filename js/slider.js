@@ -191,3 +191,34 @@ body.addEventListener("touchmove", (e) => {
   beforeAfterSlider(x);
   pauseEvents(e);
 });
+
+// before after image change
+document.querySelectorAll(".elseResults img").forEach((img, index) => {
+  img.addEventListener("click", () => {
+    const beforeImg = document.querySelector(".before img");
+    const afterImg = document.querySelector(".after img");
+
+    switch (index) {
+      case 0:
+        beforeImg.src = "img/beforeFirst.jpg";
+        afterImg.src = "img/afterFirst.jpg";
+        break;
+      case 1:
+        beforeImg.src = "img/beforeSecond.jpg";
+        afterImg.src = "img/afterSecond.jpg";
+        break;
+      case 2:
+        beforeImg.src = "img/beforeThird.jpg";
+        afterImg.src = "img/afterThird.jpg";
+        break;
+      case 3:
+        beforeImg.src = "img/beforeFour.jpg";
+        afterImg.src = "img/afterFour.jpg";
+        break;
+      case 4:
+        beforeImg.src = "img/beforeFive.jpg";
+        afterImg.src = "img/afterFive.jpg";
+        break;
+    }
+  });
+});

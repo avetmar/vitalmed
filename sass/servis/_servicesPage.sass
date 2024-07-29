@@ -1,22 +1,63 @@
-.generaldentistry
+.implants
 	margin-bottom: 120px
 	padding-top: 190px
-.implants, .restavration, .whitening, .periodontal, .estetic, .Crownsandbridges, .veneers
+	&_title
+		margin-bottom: 60px
+	&_wrapper
+		display: flex
+		gap: 50px
+		margin: 0 auto
+		margin-bottom: 80px
+		
+		img
+			max-height: 306px
+			border-radius: 30px
+		.content
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			gap: 30px
+			.text_services
+				margin-bottom: 30px
+.ekspress_implant
+	position: relative
+	background: $fon_color
+	padding: 60px 0
 	margin-bottom: 120px
-	padding-top: 30px
-.servicesPage_wrapper
+	// max-height: 480px
+	overflow: hidden
+
+	.buttonMore
+		position: absolute
+		bottom: 30px
+		left: 50%
+		transform: translateX(-50%)
+
+
+.persone_wrapper
+	padding: 0 30px
+	background: $fon_color
 	display: flex
-	justify-content: space-between
 	gap: 50px
-	max-width: 1120px
 	margin: 0 auto
+	margin-bottom: 80px
+	border-radius: 30px
 	img
-		max-height: 306px
-	.content
+		max-height: 500px
+		border-radius: 30px
+	.persone_content
 		display: flex
 		flex-direction: column
 		align-items: flex-start
-		justify-content: space-between
+		justify-content: space-around
 		gap: 30px
-		.text_services
-			margin-bottom: 30px
+		&-text
+			h3
+				text-align: left
+				margin-bottom: 30px
+	.persone_blog
+		align-self: flex-end
+		max-width: 300px
+		text-align: right
+		h4
+			margin-bottom: 20px
