@@ -5,14 +5,15 @@
 		margin-bottom: 60px
 	&_wrapper
 		display: flex
-		gap: 50px
+		gap: 20px
 		margin: 0 auto
 		margin-bottom: 80px
-		justify-content: center
+		justify-content: space-between
 		
 		img
 			max-height: 306px
-			max-width: 406px
+			// max-width: 406px
+			object-fit: cover
 			border-radius: 30px
 			box-shadow: 3px 3px 5px rgba($main-color , .3)
 		.content
@@ -20,12 +21,13 @@
 			flex-direction: column
 			align-items: flex-start
 			gap: 30px
-			max-width: 670px
+			max-width: 900px			
 			.text_services
 				margin-bottom: 30px
-.ekspress_implant, .zygoma, .bazal
+
+.ekspress_implant, .zygoma, .bazal, .fullImplant
 	position: relative
-	padding: 60px 0
+	// padding: 60px 0
 	margin-bottom: 120px
 	max-height: 480px
 	overflow: hidden
@@ -34,10 +36,18 @@
 		margin-bottom: 60px
 	.subtitle
 		margin-bottom: 30px
+	
+	.fonWrapper
+		padding: 30px 30px
+		background: $fon_color
+		border-radius: 30px
+
+.bazal, .fullImplant
+	max-height: 580px
 
 .buttonMore
 	position: absolute
-	bottom: 30px
+	bottom: 80px
 	left: 50%
 	cursor: pointer
 
